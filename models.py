@@ -1,7 +1,5 @@
 # -*- coding utf-8 -*-
 from mongoengine import Document, StringField, ListField, IntField, DateTimeField
-from bson import json_util
-import json
 import datetime
 
 
@@ -20,6 +18,3 @@ if __name__ == "__main__":
     )
     data = super.to_json()
     print(data)
-    # assert data["title"] == "Uma Tarefa"
-    # assert data["description"] == "Descrição da tarefa"
-    # assert data["done"] == False

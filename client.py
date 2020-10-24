@@ -1,6 +1,6 @@
 # -*- coding utf-8 -*-
 from flask import Flask, request, jsonify, abort, make_response
-from mongoengine import connect, Document
+from mongoengine import connect
 from models import Super
 
 app = Flask(__name__)
